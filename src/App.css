@@ -25,8 +25,17 @@ header {
   flex: 1;
 }
 
+
 .logo1{
-  margin-left: 18px;
+  text-decoration: none;
+  color: white;
+  font-family: monospace;
+    margin-left: 18px;
+
+}
+
+.title{
+  text-align: center;
 }
 
 nav ul {
@@ -74,7 +83,7 @@ footer {
 .content{
   display: flex;
   justify-content: center;
-  margin-top: 100px;
+  margin-top: 80px;
   text-align: center;
 }
 

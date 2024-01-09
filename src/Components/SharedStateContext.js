@@ -1,13 +1,12 @@
-import { createContext, useContext, useState } from 'react';
+import { createContext, useContext, useState } from "react";
 
 const SharedStateContext = createContext();
 
 export const SharedStateProvider = ({ children }) => {
-  const [PageTitle] = useState('');
-
+  const [pageTitle, setPageTitle] = useState("");
 
   return (
-    <SharedStateContext.Provider value={{ PageTitle }}>
+    <SharedStateContext.Provider value={{ pageTitle, setPageTitle }}>
       {children}
     </SharedStateContext.Provider>
   );
